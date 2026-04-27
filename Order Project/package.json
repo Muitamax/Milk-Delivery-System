@@ -1,0 +1,21 @@
+{
+  "name": "milk-delivery-system",
+  "version": "1.0.0",
+  "description": "Mobile-first milk delivery and invoicing system for Kenya",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd backend && npm run dev",
+    "client": "cd frontend && npm start",
+    "build": "cd frontend && npm run build",
+    "install-deps": "npm install && cd backend && npm install && cd ../frontend && npm install",
+    "migrate": "cd backend && npm run migrate",
+    "seed": "cd backend && npm run seed"
+  },
+  "keywords": ["milk", "delivery", "kenya", "mpesa", "saas"],
+  "author": "Milk Delivery System",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
